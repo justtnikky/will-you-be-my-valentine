@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Andale Mono', monospace;
+    background-color: #e6ddf4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.container {
+    width: 400px;
+    height: 667px;
+    margin: 8% 0 auto;
+    overflow: hidden;
+    font-family: 'Andale Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+.kuromiContainer {
+    width: 100%;
+    overflow-y: auto;
+    height: 470px; 
+}
+
+
+#kuromi {
+    margin-top: 20%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+.text p {
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+    font-family: serif;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: #852ae8;
+}
+
+.buttons {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.answer {
+    height: 50px;
+    width: 80px;
+    border-radius: 5px;
+    border: 2px solid #852ae8;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    background-color: #bfa9e4;
+}
+
+.answer:active {
+    transform: scale(0.9);
+}
+
+.answer:hover {
+    background-color: #7a45b4;
+}
+
+#yes {
+    margin-right: 20px;
+    margin-left: -20%;
+}
+
+#no {
+    position: absolute;
+}
+
+.heart {
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 19px;
+    color: rgb(63, 0, 63);
+    position: absolute;
+    top: -15vh;
+    animation: rain 3s linear;
+    z-index: 0;
+    background: transparent;
+}
+
+@keyframes rain {
+    0% {
+        transform: translateY(-10vh) rotateZ(0deg);
+    } 
+    25% {
+        transform: translateY(27vh) rotateZ(20deg);
+    }
+    50% {
+        transform: translateY(55vh) rotateZ(-20deg);
+    }
+    75% {
+        transform: translateY(90vh) rotateZ(20deg);
+    }
+    100% {
+        transform: translateY(110vh) rotateZ(-20deg);
+    }
+}
