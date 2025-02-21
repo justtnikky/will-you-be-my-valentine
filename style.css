@@ -37,11 +37,12 @@ body {
 .kuromiContainer {
     width: 100%;
     overflow-y: auto;
-    height: 470px; 
+    height: 400px; 
 }
 
 
 #kuromi {
+    margin-right: 15px;
     margin-top: 20%;
     max-width: 300px;
     max-height: 300px;
