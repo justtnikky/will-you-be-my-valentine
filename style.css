@@ -18,7 +18,7 @@ body {
 .container {
     width: 400px;
     height: 667px;
-    margin: 4% 0 auto;
+    margin: 0 auto;
     overflow: hidden;
     font-family: 'Andale Mono', monospace;
     display: flex;
